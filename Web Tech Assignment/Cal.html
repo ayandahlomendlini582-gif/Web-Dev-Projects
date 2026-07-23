@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Page</title>
+    <style>
+        .details-container {
+            display: flex;           /* Flexbox for side-by-side layout */
+            align-items: center;     /* Align items vertically in the center */
+            gap: 20px;               /* Space between the image and text */
+            margin: 20px;
+            background-color: #f5f5f5; /* Optional background color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a light shadow */
+        }
+
+        .image-section img {
+            width: 150px;           /* Fixed width for the image */
+            height: 200px;          /* Fixed height for the image */
+            border-radius: 50%;     /* Makes the image oval */
+            object-fit: cover;      /* Ensures image fits inside the oval shape */
+        }
+
+        .info-section {
+            flex: 1;                /* Allows text to take remaining space */
+        }
+
+        .info-section h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .info-section p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="details-container">
+        <!-- Left Side: Image Section -->
+        <div class="image-section">
+            <img src="your-image.jpg" alt="Mr. and Mrs. Bumble">
+        </div>
+
+        <!-- Right Side: Information Section -->
+        <div class="info-section">
+            <h2>Mr. and Mrs. Bumble</h2>
+            <p><strong>Name:</strong> John and Jane Bumble</p>
+            <p><strong>Email:</strong> johnandjane@example.com</p>
+            <p><strong>Number of Guests:</strong> 3</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+

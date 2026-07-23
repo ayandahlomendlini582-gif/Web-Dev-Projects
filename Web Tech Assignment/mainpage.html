@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px 10px;
+        }
+        #myForm {
+            font-size: 0.9em;
+            max-width: 600px;
+            max-height: 6900px;
+            margin: auto;
+            padding: 20px 30px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input {
+            width: 89%;
+            margin: 10px 0;
+            padding: 5px; 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            font-size: 2.3vh;
+            cursor: pointer;
+            border: none;
+            background-color: rgb(247, 52, 133);
+            margin: 20px 0px;
+            width: 90%;
+            border-radius: 5px;
+            padding: 8px;
+            color: white;
+        }
+        #Options {
+            width: 90%;
+            padding: 8px;
+            border-color: #ccc;
+            border-radius: 5px;
+        }
+        #TableOptions {
+            width: 90%;
+            padding: 8px;
+            border-color: #ccc;
+            border-radius: 5px;
+        }
+        #myTitle {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="myForm">
+        <form action="Details.html">
+            <div id="myTitle">
+                <h1>Bumble's Family 25th Anniversary Invitation</h1>
+            </div>
+            <div id="Content">
+                    <br>
+                <label id="Fname">Full Name:</label>
+                <br>
+                <input type="text" id="myText">
+                <br>
+                <label id="Cellnum">Phone Number:</label>
+                <br>
+                <input type="text" id="myNumber">
+                <br>
+                <label id="E-mail">Email Address:</label>
+                <br>
+                <input type="email" id="myEmail">
+                <br>
+                <label id="NumOfAttendee">Number of Attendees:</label>
+                <br>
+                <input type="text" id="myAttendees">
+                <br>
+                <label id="Clock">Arrival Time:</label>
+                <br>
+                <input type="time" id="myTime">
+                <br>
+                <label>Menu Preference:</label>
+                <br>
+                <select id="Options" style="max-width:90%;">
+                    <option>Vegan</option>
+                    <option>Diet</option>
+                    <option>Normal</option>
+                </select>
+                <br>
+                <label>Select Table Option:</label>
+                <br>
+                <select id="TableOptions" style="max-width: 90%;">
+                    <option>Table 1</option>
+                    <option>Table 2</option>
+                    <option>Table 3</option>
+                    <option>Table 4</option>
+                </select>
+                <br>
+                <br>    
+                <button id="SubmitBtn" onclick="Registration()">Submit</button>
+            </div>
+        </form>
+    
+    </div>
+    <script>
+        function Registration() {
+            const name = document.getElementById("myText").value;
+            const cellnumber = document.getElementById("myNumber").value;
+            const email = document.getElementById("myEmail").value;
+            const guests = document.getElementById("myAttendees").value;
+            const time = document.getElementById("myTime").value;
+            const foodOption = document.getElementById("Options").value;
+            const TableOption = document.getElementById("TableOptions").value;
+
+            localStorage.setItem("FormName", name);
+            localStorage.setItem("FormNumber", cellnumber);
+            localStorage.setItem("FormEmail", email);
+            localStorage.setItem("FormGuests", guests);
+            localStorage.setItem("FormArrival", time);
+            localStorage.setItem("FormFood", foodOption);
+            localStorage.setItem("FormSeating", TableOption);
+
+            window.location.href = "details.html";
+
+        }
+    </script>
+</body>
+</html>
