@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="ChangeColor">Change Color</button>
+    <script>
+        document.getElementById("ChangeColor").addEventListener('click', 
+            function(){
+                document.body.style.backgroundColor = ChangeBackground();
+            }
+        );
+        function ChangeBackground(){
+            let letters = "123456789ABECEF";
+            let color = "#";
+            for(let i=0; i<6; i++){
+                color+=letters[Math.floor(Math.random() * 16)];
+            };
+            return;
+        };
+    </script>
+</body>
+</html>
