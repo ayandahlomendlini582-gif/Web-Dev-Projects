@@ -1,0 +1,17 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+button{
+    margin: 200px 50px;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+p{
+    font-size: 20px;
+}

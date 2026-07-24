@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="buttons">Show Button</button>
+    <p id="text" style="display: none;">Show this text if its working</p>
+    <script>
+        document.getElementById("buttons").addEventListener('click', 
+        function(){
+            const text = document.getElementById("text");
+            if(text.style.display === 'none'){
+                text.style.display === 'block';
+            }else{
+                text.style.display === 'none';
+            }
+        })
+
+    </script>
+</body>
+</html>
