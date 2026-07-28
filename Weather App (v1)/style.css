@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    background-color: rgb(0, 132, 255);
+}
+.main-cup{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content-row{
+    display: flex;
+}
+input {
+  color: white;
+}
+.search-container{
+    margin: 10px 25px;
+    display: flex;
+    height: 45px;
+    width: 800px;
+    border-radius: 15px;
+    border: 1px solid rgba(228, 231, 234, 0.93);
+    border-radius: 15px;
+}
+.search-container input{
+    flex: 1; /* Makes input take up remaining space */
+    height: 100%;
+    padding: 0 20px; /* Adds space inside so text doesn't touch the curves */
+    border: none;
+    outline: none;
+    background: transparent; /* Lets the container's glass effect show through */
+    font-family: inherit
+}
+.search-container img{
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.search-container button{
+    width: 55px;
+    height: auto;
+
+}
+.side-nav{
+    margin: 10px 10px;
+    width: 130px;
+    height: 800px;
+
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.side-nav p{
+    padding: auto;
+    margin-left: 10px;
+    background-color:rgba(228, 231, 234, 0.46);
+}
+.side-nav img{
+    margin: 20px 30px;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+}
+.top-report{
+    margin: 10px 15px;
+    width: 900px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.top-report p{
+    font-size:2.3em;
+    margin-top: 25px;
+    margin-left: 49px;
+    color:white;
+}
+.top-report img{
+    width: 120px;
+    height: 140px;
+    margin-left: 550px;
+}
+.lower-report{
+    margin: 10px 15px;
+    width: 900px;
+    height: 400px;
+    
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.lower-report p{
+    margin-top: 15px;
+    margin-left: 19px;
+    color: white;
+    font-size: 2.3em;
+}
+.right-sec{
+    margin: 10px 15px;
+    position: relative;
+    width: 500px;
+    height: 800px;
+    
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.right-sec p{
+    margin-top: 39px;
+    margin-left: 19px;
+    color: white;
+}

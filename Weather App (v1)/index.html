@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--Ok this a Weather app where im hoping i can use and learn a REAL API 
+    1. The conecpt is a SA weather with graphics for for in each provice like the weather in the news
+    Example: 
+      See overall Gauteng Weather > Press Gauteng to see regional weather > Press region see weather and conditions
+    2. A more Simpler Weather app Shows you the weather report for the week, chances, etc.
+    3. A more Goofy design, shows reactions for weather like sad emoji for bad weather  -->
+<body>
+  <div class="main-cup">
+    <div class="search-container">
+      <input type="text" class="search-input" id="cityInput" placeholder="Search...">
+    </div>
+
+    <div class="content-row">
+      <div class="side-nav">
+        <img src="more.png"><br>
+        <img src="burger-bar.png"><br>
+        <img src="world-wide-signal.png"><br>
+        <img src="location.png">
+      </div>
+
+    <div class="report">
+        <div class="top-report">
+          <p id="CityName">City</p>
+          <img>
+          <hr>
+          <p id="temperature" style="font-size: 55px;"> </p><br>
+        </div>
+        <div class="lower-report">
+          <p id="cityForecast">Todays forecast</p><br><br>
+          <p id="windSpd">Wind Speed: </p>
+        </div>
+    </div>
+    
+    <div class="right-sec">
+      <p id="weekForecast">Weekly Forecast</p>
+      <hr>
+      <div id="forecastContainer"></div>
+    </div>
+
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
