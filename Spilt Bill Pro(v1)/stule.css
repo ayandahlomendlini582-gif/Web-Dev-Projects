@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    font-style: italic;  
+    font-size: 1.2em;
+    background: burlywood;
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+
+}
+.container{
+    margin: 90px 370px;
+    height: 500px;
+    width: 699px;
+    
+}
+.container input{
+    text-decoration: underline;
+    border: none;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+}

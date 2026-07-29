@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calcualtor</title>
+    <link rel="stylesheet" href="stule.css">
+    
+</head>
+<body>
+    <!--This is a single-component project where you’ll build a small utility that helps people split their total bill amount, 
+        including tip, evenly among a group. 
+        You are already provided with a complete UI and styles —
+        your task is to make the logic work behind the "Calculate" button.-->
+    <div class="container">
+        <p>---------------------------------------------</p>
+        <h1> The Bill($)</h1>
+        <p>---------------------------------------------</p>
+
+        Bill($):<input type="number" id="BillAmount"><br>
+        Tips(%):<input type="number" id="TipAmount"><br>
+        Number of people:<input type="number" id="NumOfPeople"><br>
+        
+        Is this All(Y/N):<br>
+        <button onclick="CalcualateBill()">Yes</button><button onclick="ClickedNo()">No</button><br>
+        <p>---------------------------------------------</p>
+        <h3>Total:</h3><br><p id="GroupTotal"></p>
+        <p>---------------------------------------------</p>
+
+        Is this a split bil?(Y/N):
+        <button onclick="CalcualateBill()">Yes</button><button onclick="ClickedNo()">No</button>
+        <p>---------------------------------------------</p>
+        <h3>Total for Each Person($):</h3><br><p id="PersonTotal"></p>
+
+        <p>---------------------------------------------</p><br>
+
+        <h1>THANK YOU!</h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
