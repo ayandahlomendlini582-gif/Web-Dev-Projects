@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<style>
+    body{
+        background: red;
+    }
+    .signup-form{
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        background: wheat;
+        padding: 10px 40px;
+        width: 400px;
+        height: 600px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.4em;
+        margin-top: 60px;
+    }
+    .signup-form input{
+        width: 90%;
+        height: 20px;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <div class="signup-form">
+        <h2>Signup</h2>
+        <form action="signup-page" method="POST">
+                <label>Name:</label><br>
+                <input type="text" id="name"><br>
+                <label>Surname:</label><br>
+                <input type="text" id="surname"><br>
+                <label>Number:</label><br>
+                <input type="number" id="number"><br>
+                <label>Email:</label><br>
+                <input type="email" id="Email"><br><br>
+                <input type="submit" value="Submit"><br>
+                <p>Already signed up?<a href="login.html">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>

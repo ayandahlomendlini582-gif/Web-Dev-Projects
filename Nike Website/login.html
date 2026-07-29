@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    body{
+        background:gray;
+    }
+    .login-form{
+        margin: auto;
+        padding: 60px 30px;
+        height: 490px;
+        width: 400px;
+        margin-top: 70px;
+        justify-content: center; /* Centers the form horizontally */
+        align-items: center;
+        align-self: center;
+        background: rgba(255, 255, 255, 0.2);
+        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        
+    }
+    input{
+        width: 90%;
+        height: 25px;
+        border-radius: 9px;
+        margin: 0.9rem 0;
+    }
+    .login-form .Login-button{
+        height: 35px;
+        width: 95%;
+        background: lavender;
+    }
+</style>
+<body>
+    <div class="login-form">
+        <h2>Welcomeback </h2>
+        <form action="login-page" method="POST">
+                <label>Name:</label><br>
+                <input type="text" id="name"><br>
+                <label>Email:</label><br>
+                <input type="email" id="Email"><br><br><br>
+                <input type="submit" value="Login" class="Login-button">
+                <p>Not signed up? Click <a href="signup.html">here</a></p>
+        </form>
+    </div>
+</body>
+</html>

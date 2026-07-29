@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+}
+.row-1{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 20px 20px;
+    background: gray;
+    margin-left:150px;
+}
+.Logo{
+    display: inline-block;
+    background: blue;
+    margin-right: 150px;
+
+}
+.search-container {
+    display: flex;
+    width: 70%;
+    max-width: 600px;
+}
+.search-input {
+    flex: 1;
+    height: 35px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 5px;
+}
+.search-button {
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 5px;
+}
+.search-button img{
+    width: 20px;
+    height: auto;
+}
+.row-2{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: red;
+    height: 50px;
+}
+.categories{
+    margin-top: 5px;
+}
+.row-2 p{
+    font-size: 30px;
+    display: inline;
+    padding: 20px 60px;
+}
+.content-wrapper {
+    display: flex;
+    min-height: 625px;
+}
+.sidebar {
+    width: 200px;
+    background-color: aqua;
+    padding: 20px 0 20px 30px;
+}
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sidebar nav ul li img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar nav ul li:hover img {
+    transform: translateX(10px);
+}
+.main-content {
+    flex: 1;
+    background: gray;
+    padding: 30px;
+}
+
+.main-content h2 {
+    color: white;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card{
+    display: inline-block;
+    width: 200px;
+    height: 290px;
+    background: red;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 15px;
+    
+}
+.card .img-box{
+    background: none;
+    position: relative;
+    align-self: center;
+    width: 100%;
+    height: 60%;
+    margin-top: -9px;
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+.card .img-box img{
+    width:100%;
+    height: 100%;
+    align-self: center;
+    cursor: pointer;
+}
+.card .content{
+    text-align: center;
+    margin-top: 10%;
+    background: white;
+}
+
+
+.footer{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding: 50px 20px;
+    background-color: darkgreen;
+    font-size: 120%;
+}
+.info-1{
+    padding-right: 120px;
+    
+}
+.info-1{
+    padding-left: 120px;
+}
