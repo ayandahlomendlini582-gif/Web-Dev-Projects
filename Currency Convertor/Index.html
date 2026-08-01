@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div id="high-section">
+        <!-- TradingView Real-Time Chart Widget Widget BEGIN -->
+         <div class="widget-container">
+            <div class="chart">
+                <script type="text" src="https://tradingview.com"></script>
+                <script type="text/js">
+                    new.TradingView.widget({
+                        "autosize": true,
+                        "symbol": "FX:EURUSD", // Default pair. Your JS can change this later!
+                        "interval": "D",
+                        "timezone": "Etc/UTC",
+                        "theme": "dark", // Matches the dark gradient in your new CSS
+                        "style": "3", // Area chart style for a clean look
+                        "locale": "en",
+                        "enable_publishing": false,
+                        "hide_legend": true,
+                        "container_id": "tradingview_chart"
+                    })
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="" id="low-section">
+        <h1>Currency <span id="currency-A-title">A</span> - Currency <span id="currency-B-title">B</span>
+            <div id="load-icon" class="spinner"></div>
+        </h1><br>
+        <div class="pair-group">
+            <select id="select-currency-A">
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="ZAR">ZAR - Rand Dollar</option>
+                <option value="GBP">GBP - Pound Dollar</option>
+            </select>
+        </div>
+        <div class="pair-group">
+            <select id="select-currency-B">
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro </option>
+                <option value="ZAR">ZAR - Rand Dollar</option>
+                <option value="GBP">GBP - Pound Dollar</option>
+            </select>
+        </div>
+        Currency <span id="pair A">S:</span><input id="currency-A" placeholder="0.00"><br>
+        Currency <span id="pair B">S:</span><input id="currency-B" placeholder="0.00"><br>
+    </div>
+    
+</body>
+</html>
