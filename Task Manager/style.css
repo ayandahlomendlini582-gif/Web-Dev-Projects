@@ -1,0 +1,11 @@
+/* This class hides elements from the screen */
+    .hidden {
+      display: none;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .task-group {
+      margin-bottom: 15px;
+    }

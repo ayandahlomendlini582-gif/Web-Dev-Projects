@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="top-section" class="header">     
+        <h1>Task Manager</h1>
+        <button type="submit" form="taskForm">+ task</button>
+    </div>
+
+    <div id="middle-section" class="middle">
+        <h1>Today</h1>
+
+        <!--COLLECTS DATA FOR LATER SUBMISSION-->
+        <form id="taskForm">
+
+            <div class="task-group">
+                <!--RADIO BUTTON SHOWING COMPLETE TASK-->
+            </div>
+
+            <div class="task-group">
+                <label> Task Title:</label><br>
+                <input type="text" id="taskName">
+            </div>
+
+            <div class="task-group">
+                <label for="taskPriority">Choose a Priorities:</label><br>
+                <select id="taskPriority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+
+        </form>
+
+        <!--THIS DISPLAYS THE DATA FROM THE FORM-->
+        <div id="resultContainer" class="hidden">
+            <ul id="taskList">
+                
+            </ul>
+            <p><span id="displayTask"></span></p>
+            <p><span id="displayPriority"></span></p>
+            <!-- -->
+        </div>
+        
+    </div>
+    <div id="bottom-section" class="bottom">
+        <h1>Progress</h1>
+    </div>
+    
+</body>
+</html>
+
+
+<!--Building  a small production style task manager
+    =========== FROM WHAT WE KNOW ========
+    1.CREATE TASK
+    2.UPDATE TASK
+    3.DELETE TASK
+    4.READ TASK
+
+    STORE DATA PERMANTLY
+
+    FUTURE ADD-ONS:
+    # TASK NOTIFICATIONS:
+    <Task status
+    <Progress tracking
+    <Deadlines
+    <Priorities
+    <Categories/projects
+
+    # CALENDAR
+    <Built-in calendar
+    <Eventually investigate external calendar integration
+
+    # TASK NOTIFICATIONS
+    <Reminders
+    <Deadline notifications
+
+    # ANALYTICS
+
+    Task Manager MVP
+
+□ Create task
+□ View tasks
+□ Update task
+□ Delete task
+□ Mark task complete
+□ Set due date
+□ Store tasks in database
+
+-->
