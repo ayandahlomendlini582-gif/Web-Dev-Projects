@@ -1,0 +1,58 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.note-form{
+    padding: 10px 60px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 255, 0.2);
+    background-color: aliceblue;
+    width: 50%;       /* Or a fixed size like 300px */
+    margin: 2rem auto;   /* Centers horizontally */
+    height: 600px;
+    max-height: 990px;
+    overflow: hidden;
+    position: relative;
+
+}
+.note-form.h3:empty::before{ 
+    content: attr(data-placeholder); color:black;
+}
+
+/* The vertical red margin line */
+.margin-line {
+  position: absolute;
+  top: 0;
+  left: 50px; /* Distance from the left edge */
+  bottom: 0;
+  width: 2px;
+  background-color: #ff9e9e; /* Soft coral red that compliments aliceblue */
+}
+
+/* The textarea where lines are drawn */
+.note-content{
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  padding: 40px 20px 20px 70px; /* Left padding pushes text past the red line */
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: 'Courier New', Courier, monospace; /* Keeps font size stable */
+  font-size: 16px;
+
+  /* Crucial step: Set line-height exactly to match the background line spacing */
+  line-height: 30px; 
+  
+  /* Creates slate-blue horizontal lines over the aliceblue background */
+  background-image: repeating-linear-gradient(
+    aliceblue 0px,
+    aliceblue 29px,
+    #b0c4de 29px,
+    #b0c4de 30px
+  );
+
+  resize: none; /*Keeps the user from dragging and stretching the box */
+  background-attachment: local; /* Crucial: This makes the lines scroll smoothly with the text! */
+}
