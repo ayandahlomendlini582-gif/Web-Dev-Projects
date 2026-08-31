@@ -1,144 +1,82 @@
-# 🚀 [PROJECT NAME]
+# 💬 Real-Time Communication Platform
 
-> [A short, clear description of what this project does.]
+> A real-time communication platform designed to explore scalable chat systems, server/channel architecture, user permissions, WebSockets, databases, and real-time communication.
 
-<!-- Project badges -->
-![Status](https://img.shields.io/badge/Status-[STATUS]-blue?style=for-the-badge)
-![Version](https://img.shields.io/badge/Version-[VERSION]-blue?style=for-the-badge)
-![Language](https://img.shields.io/badge/Language-[LANGUAGE]-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/License-[LICENSE]-green?style=for-the-badge)
-
-<!-- Optional -->
-<!-- ![GitHub stars](https://img.shields.io/github/stars/[USERNAME]/[REPOSITORY]?style=for-the-badge) -->
-<!-- ![GitHub forks](https://img.shields.io/github/forks/[USERNAME]/[REPOSITORY]?style=for-the-badge) -->
-<!-- ![GitHub issues](https://img.shields.io/github/issues/[USERNAME]/[REPOSITORY]?style=for-the-badge) -->
+![Status](https://img.shields.io/badge/Status-Planning-yellow?style=for-the-badge)
+![Project Type](https://img.shields.io/badge/Project-Real--Time%20Web%20Application-blue?style=for-the-badge)
+![Focus](https://img.shields.io/badge/Focus-Real--Time%20Communication-purple?style=for-the-badge)
 
 ---
 
-## 📌 Table of Contents
+# 📌 About The Project
 
-- [About The Project](#-about-the-project)
-- [Project Objectives](#-project-objectives)
-- [Features](#-features)
-- [Technologies Used](#-technologies-used)
-- [Project Structure](#-project-structure)
-- [Screenshots](#-screenshots)
-- [Getting Started](#-getting-started)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Bugs & Fixes](#-bugs--fixes)
-- [Challenges & Struggles](#-challenges--struggles)
-- [What I Learned](#-what-i-learned)
-- [Development Process](#-development-process)
-- [Roadmap](#-roadmap)
-- [Known Issues](#-known-issues)
-- [Future Improvements](#-future-improvements)
-- [Project Reflection](#-project-reflection)
-- [License](#-license)
-- [Author](#-author)
+This project is a real-time communication platform inspired by modern community and messaging applications.
 
----
+The goal is to build a system where users can create communities, join servers, communicate through text channels, manage permissions, and receive real-time updates without refreshing the page.
 
-## 📖 About The Project
+The project is primarily intended as a learning and portfolio project focused on understanding how large-scale real-time applications can be structured.
 
-### What is this project?
+The system will explore:
 
-[Explain what the project is and what it does.]
-
-Example:
-
-> This project is a desktop application developed using Java that allows users to manage files and folders through a graphical user interface.
-
-### Why did I build it?
-
-[Explain why you created the project.]
-
-This project was created to:
-
-- [Reason 1]
-- [Reason 2]
-- [Reason 3]
-
-### Project Background
-
-[Explain whether this was a university project, personal project, learning exercise, portfolio project, etc.]
+- User authentication
+- Server/community management
+- Text channels
+- Real-time messaging
+- Online presence
+- Roles and permissions
+- WebSockets
+- Databases
+- File and media storage
+- API design
+- State management
+- Real-time events
+- Voice/video communication
 
 ---
 
-## 🎯 Project Objectives
+# 🎯 Project Goals
 
-The main objectives of this project are:
+The main goals are to:
 
-- [ ] [Objective 1]
-- [ ] [Objective 2]
-- [ ] [Objective 3]
-- [ ] [Objective 4]
-
----
-
-## ✨ Features
-
-### ✅ Implemented Features
-
-- [x] [Feature 1]
-- [x] [Feature 2]
-- [x] [Feature 3]
-
-### 🚧 Features Currently Being Developed
-
-- [ ] [Feature 1]
-- [ ] [Feature 2]
-
-### 🔮 Planned Features
-
-- [ ] [Feature 1]
-- [ ] [Feature 2]
-- [ ] [Feature 3]
+- Build a functional real-time communication platform
+- Understand client-server architecture
+- Learn WebSocket communication
+- Build REST/API endpoints
+- Understand authentication and authorization
+- Design relational data structures
+- Implement real-time messaging
+- Manage application-wide state
+- Handle file uploads
+- Learn how permissions systems work
+- Explore scalable application architecture
+- Eventually experiment with voice/video communication
 
 ---
 
-## 🛠️ Technologies Used
+# 🧠 Core Concept
 
-| Technology | Purpose |
-|---|---|
-| [Java] | [Application development] |
-| [Java Swing] | [Graphical user interface] |
-| [Git] | [Version control] |
-| [GitHub] | [Repository and project management] |
-| [Other] | [Purpose] |
-
-### Languages
-
-- [Language]
-- [Language]
-
-### Frameworks / Libraries
-
-- [Framework]
-- [Library]
-
-### Development Tools
-
-- [IDE]
-- Git
-- GitHub
-
----
-
-## 📂 Project Structure
+The platform will allow users to:
 
 ```text
-[PROJECT NAME]/
-│
-├── src/
-│   ├── [folder]/
-│   ├── [folder]/
-│   └── [file]
-│
-├── docs/
-│   └── screenshots/
-│
-├── README.md
-├── DEVELOPMENT_LOG.md
-├── .gitignore
-└── ...
+Create Account
+      │
+      ▼
+    Login
+      │
+      ▼
+Create / Join Community
+      │
+      ▼
+Choose Channel
+      │
+      ▼
+Send Message
+      │
+      ▼
+WebSocket Event
+      │
+      ▼
+Other Connected Users
+      │
+      ▼
+Message Appears Instantly
